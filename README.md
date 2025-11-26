@@ -2,6 +2,36 @@
 
 # Blockchain Product Tracker (Python + Solidity)
 
+blockchain-product-tracker/
+├─ contracts/
+│  └─ ProductTracker.sol
+├─ src/
+│  ├─ deploy_contract.py
+│  ├─ contract_utils.py
+│  └─ app.py
+├─ .env.example
+├─ requirements.txt
+├─ .gitignore
+└─ README.md
+
+# .gitignore
+
+# Python
+__pycache__/
+*.pyc
+.env
+contract_info.json
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# build/compilation artifacts
+build/
+artifacts/
+
+
 A simple product tracking smart contract and Python backend (Flask + web3.py). This project demonstrates:
 - A Solidity contract that stores products and their status history.
 - Python scripts to compile & deploy the contract (using `py-solc-x`).
